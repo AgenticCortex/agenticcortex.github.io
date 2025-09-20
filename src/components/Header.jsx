@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from './Button';
 import './Header.css';
+import AgenticCortex from '../icon/AgenticCortex';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,8 @@ const Header = () => {
         <div className="header-content">
           {/* Logo */}
           <div className="logo">
-            <img src="/AgenticCortex.svg" alt="AgenticCortex" className="logo-img animate-pulse-glow" />
+            {/* <img src="/AgenticCortex.svg" alt="AgenticCortex" className="logo-img animate-pulse-glow" /> */}
+            <AgenticCortex className="logo-img "/>
             <span className="logo-text gradient-text">AgenticCortex</span>
           </div>
 
